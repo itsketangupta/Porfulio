@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 
 body {
@@ -7,6 +8,7 @@ body {
   box-sizing: border-box;
   font-family: "Irish Grover", system-ui;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 header:hover {
@@ -28,6 +30,14 @@ header {
   transform: rotate(-5deg);
   transition: all 0.9s ease-in-out;
   width: 99%;
+  left: 1vw;
+}
+
+@media (max-width: 1134px) {
+  header {
+    position: relative;
+    left: 21vw;
+  }
 }
 
 header .right_side .side_drink {
@@ -245,6 +255,145 @@ img {
 
 .camera img {
   position: absolute;
-  right: -1vw;
-  top: 300px;
+  right: -7vw;
+  top: 600px;
+  cursor: pointer;
+}
+
+#about h1 {
+  font-size: 209px;
+  width: 473.36px;
+  color: #E8E8E8;
+  margin-left: 100px;
+}
+
+#about .main .left_img img {
+  display: flex;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-top: -240px;
+}
+
+#about .main .right_img .pen {
+  position: absolute;
+  left: 50vw;
+  margin-top: -920px;
+  transform: scale(0.8);
+}
+
+#about .main .right_img .ink {
+  position: absolute;
+  left: 60vw;
+  margin-top: -100px;
+}
+
+.sticky_note {
+  background-image: url(Assests/stickynote.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 560px;
+  height: 319px;
+  margin-top: 120px;
+  margin-left: 100px;
+  margin-bottom: 300px;
+  transform: rotate(-9.79deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#time {
+  font-weight: 900;
+  font-family: "Doto", sans-serif;
+  font-size: 64px;
+  color: #111;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#date {
+  font-size: 42px;
+  line-height: 1;
+  margin: 2px 0 0;
+}
+
+#day {
+  font-size: 42px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.time_box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 28px;
+  width: 100%;
+  margin-top: 0;
+  padding: 0 56px 0 42px;
+  box-sizing: border-box;
+  transform: rotate(-9.79deg);
+  color: #7f838a;
+}
+
+.time_box .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 86px;
+}
+
+.time_box .right {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 700px) {
+  .sticky_note {
+    width: 92vw;
+    height: calc(92vw * 0.57);
+    margin-left: 4vw;
+    margin-top: 70px;
+    margin-bottom: 160px;
+  }
+
+  .time_box {
+    margin-top: 52px;
+    gap: 18px;
+    padding: 0 34px 0 24px;
+  }
+
+  #day,
+  #date {
+    font-size: 30px;
+  }
+
+  #time {
+    font-size: 44px;
+  }
+}
+
+#canvas {
+  width: 90vw;
+  height: 870px;
+  background: #AC7F5E;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-top: -200px;
+  margin-bottom: 5vw;
+  border: 1vw solid #593F2C;
+}
+
+.img {
+  position: absolute;
+  width: 40vw;
+  cursor: grab;
+  user-select: none;
+}
+
+.img:active {
+  cursor: grabbing;
 }
