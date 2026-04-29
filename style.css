@@ -1,5 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
 body {
-    background-image: url(Background.png);
-    background-repeat: no-repeat;
-    background-size: auto;
+  margin: 0;
+  padding: 0;
+  background-image: url(Assests/background.svg);
+  box-sizing: border-box;
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+}
+
+header:hover {
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+header .profile .logo {
+  position: absolute;
+  left: 45vw;
+  top: 150px;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  display: flex;
+  position: relative;
+  transform: rotate(-5deg);
+  transition: all 0.9s ease-in-out;
+  width: 99%;
+}
+
+header .right_side .side_drink {
+  position: absolute;
+  right: 27vw;
+  top: 50px;
+  z-index: 2;
+}
+
+header .side .side_plant {
+  position: absolute;
+  left: 20vw;
+  transform: rotate(1deg);
+  z-index: 2;
+}
+
+header .center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+header .side .side_plant:hover {
+  cursor: pointer;
+  transition: all 0.9s ease-in-out;
+  top: -2px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(120deg);
+  }
+
+  75% {
+    transform: rotate(240deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hand img {
+  position: absolute;
+  left: 15vw;
+  top: 40px;
+  z-index: 2;
+}
+
+header .right_side .side_drink:hover {
+  animation: vibrate 0.15s linear 3;
+}
+
+.music_player:hover .disc img {
+  animation: rotate 1s linear infinite;
+}
+
+.music_player .disc img {
+  margin-top: 28px;
+}
+
+.music_player .disc {
+  display: flex;
+  justify-content: center;
+}
+
+.music_player:hover {
+  transform: rotate(2deg);
+  cursor: pointer;
+}
+
+.music_player {
+  width: 230.66px;
+  height: 365.07px;
+  border-radius: 20px;
+  background-color: #CECECE;
+  margin-left: 60px;
+  transform: rotate(-10deg);
+  transition: all 0.9s ease-in-out;
+}
+
+.bottom_of_part .h1_bottom_of_header .sign {
+  position: absolute;
+  left: 38vw;
+  margin-top: 40px;
+}
+
+.bottom_of_part .h1_bottom_of_header .wow {
+  position: absolute;
+  left: 34vw;
+  margin-top: -5px;
+}
+
+.bottom_of_part .h1_bottom_of_header .star {
+  position: absolute;
+  right: 36vw;
+  margin-top: 28px;
+}
+
+.bottom_of_part {
+  display: flex;
+}
+
+.headphone {
+  position: absolute;
+  left: 6vw;
+  margin-top: 28px;
+}
+
+.folder {
+  position: relative;
+  cursor: pointer;
+}
+
+.folder .claud {
+  top: 358px;
+  position: absolute;
+  left: 24vw;
+  transition: all 0.6s ease-in-out;
+}
+
+.folder .tablet_and_phone {
+  top: 360px;
+  position: absolute;
+  left: 22.3vw;
+  transition: all 0.6s ease-in-out;
+}
+
+.folder .lappy {
+  top: 370px;
+  position: absolute;
+  left: 23vw;
+  transition: all 0.6s ease-in-out;
+}
+
+.folder:hover .claud {
+  top: 238px;
+  position: absolute;
+  left: 28vw;
+}
+
+.folder:hover .tablet_and_phone {
+  top: 240px;
+  position: absolute;
+  left: 17vw;
+}
+
+.folder:hover .lappy {
+  top: 330px;
+  position: absolute;
+  left: 13vw;
+}
+
+.folder .inner_part {
+  top: 300px;
+  position: absolute;
+  left: 20vw;
+}
+
+.folder .upper_part {
+  top: 300px;
+  position: absolute;
+  left: 21.6vw;
+}
+
+img {
+  user-select: none;
+}
+
+@media (max-width: 1025px) {
+  .folder .upper_part {
+    position: absolute;
+    left: 22.3vw;
+  }
+}
+
+.camera img {
+  position: absolute;
+  right: -1vw;
+  top: 300px;
 }
