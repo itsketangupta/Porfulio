@@ -53,55 +53,50 @@ let offsetX = 0;
 let offsetY = 0;
 let zIndex = 1;
 
-let startX = 0;
-let startY = 0;
-let isDragging = false;
+let hasMoved = false;
 
 document.querySelectorAll(".img").forEach(img => {
 
     img.addEventListener("mousedown", (e) => {
-        selected = img;
+        e.preventDefault(); // link issue fix
 
-        startX = e.clientX;
-        startY = e.clientY;
+        selected = img;
+        hasMoved = false;
 
         offsetX = e.clientX - img.offsetLeft;
         offsetY = e.clientY - img.offsetTop;
 
-        isDragging = false;
-
         zIndex++;
         img.style.zIndex = zIndex;
+
+        // ⭐ important: only track when mouse is DOWN
+        document.addEventListener("mousemove", moveImage);
+        document.addEventListener("mouseup", stopDrag);
     });
 
 });
 
-document.addEventListener("mousemove", (e) => {
+function moveImage(e) {
     if (!selected) return;
 
-    let dx = Math.abs(e.clientX - startX);
-    let dy = Math.abs(e.clientY - startY);
+    hasMoved = true;
 
-    // agar thoda bhi move hua → drag start
-    if (dx > 5 || dy > 5) {
-        isDragging = true;
-    }
+    selected.style.left = (e.clientX - offsetX) + "px";
+    selected.style.top = (e.clientY - offsetY) + "px";
+}
 
-    if (isDragging) {
-        selected.style.left = (e.clientX - offsetX) + "px";
-        selected.style.top = (e.clientY - offsetY) + "px";
-    }
-});
+function stopDrag() {
+    document.removeEventListener("mousemove", moveImage);
+    document.removeEventListener("mouseup", stopDrag);
 
-document.addEventListener("mouseup", () => {
     selected = null;
-});
+}
 
-// ⭐ MAIN MAGIC
+// ⭐ click vs drag fix
 document.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", (e) => {
-        if (isDragging) {
-            e.preventDefault(); // drag hua → link block
+        if (hasMoved) {
+            e.preventDefault();
         }
     });
 });

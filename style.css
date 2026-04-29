@@ -377,7 +377,7 @@ img {
 
 #canvas {
   width: 90vw;
-  height: 870px;
+  height: 899px;
   background: #AC7F5E;
   border-radius: 15px;
   position: relative;
@@ -385,6 +385,7 @@ img {
   margin-top: -200px;
   margin-bottom: 5vw;
   border: 1vw solid #593F2C;
+  animation: lfloat 3s ease-in-out infinite;
 }
 
 .img {
@@ -396,4 +397,37 @@ img {
 
 .img:active {
   cursor: grabbing;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+#canvas:hover {
+  animation-play-state: paused;
+  transform: translateY(-18px) scale(1.04);
+}
+
+#canvas .tag {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--color-text-tertiary);
+  margin-top: 4px;
+  letter-spacing: 0.04em;
+}
+
+@keyframes lfloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
