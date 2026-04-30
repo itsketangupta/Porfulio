@@ -1,9 +1,19 @@
-# It'sKetan Gupta
-This website is my porfulio 
+# itsketangupta
+
+this is my personal website made by me
 
 ---
 
-## How to run this project locally (or how to clone and modify this project)
+##  Features
+
+###In this website it has many hover effect like
+
+-  **You can see in this image the upper plant has hover effect you hover it the plant will be float**
+-  **And the side Coffee cup has vibrate effect when you hover**
+-  **The project section has drag function**
+
+---
+##  Getting Started
 
 ### 1. Clone the repository
 
@@ -11,36 +21,42 @@ This website is my porfulio
 git clone https://github.com/itsketangupta/Porfulio.git
 ```
 
-### 2. Open the project folder
+### 2. Navigate to project folder
 
 ```bash
 cd Porfulio
 ```
 
-### 3. Run the project
+### 3. Open in browser
 
-This is a simple frontend project, so you can just open the `index.html` file in your browser.
-
-Or, if you are using VS Code:
-
-"Open with Live Server"
+Just open `index.html` or run with Live Server.
 
 ---
 
-## Why I made this
+##  Contributing
 
-I have all trash Porfulio so I make it 
+Contributions are welcome!
+
+If you’d like to improve My personal website:
+
+1. Fork the repo
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
 
 ---
 
-## Language used
+##  Tech Stack
 
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript (Vanilla JS)
 
 ---
 
-## Demo link 
+##  Live Demo
 
-[Portfulio](https://itsketangupta.vercel.app/)
+=> [Itsketangupta](https://itsketangupta.vercel.app/)
+##  Maker
+
+**Ketan Gupta**  
