@@ -6,7 +6,7 @@ this is my personal website made by me
 
 ##  Features
 
-###In this website it has many hover effect like
+### In this website it has many hover effect like
 
 -  **You can see in this image the upper plant has hover effect you hover it the plant will be float**
 -  **And the side Coffee cup has vibrate effect when you hover**
@@ -57,6 +57,3 @@ If you’d like to improve My personal website:
 ##  Live Demo
 
 => [Itsketangupta](https://itsketangupta.vercel.app/)
-##  Maker
-
-**Ketan Gupta**  
