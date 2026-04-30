@@ -5,7 +5,7 @@ function updateTime() {
     let minutes = now.getMinutes();
     const numericHours = hours;
     let date = now.getDate();
-    let month = now.getMonth();
+    let month = now.getMonth() + 1;
     let year = now.getFullYear();
     let dayOfWeek = now.getDay();
 
