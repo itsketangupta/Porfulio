@@ -8,11 +8,16 @@ The goal of this site is not just to showcase projects, but to present my journe
 
 ## Why I Made This
 
-Most portfolios feel very similar and predictable. I didn’t want mine to be just another static page with a few cards and links.,
+Most portfolios feel very similar and predictable. I didn’t want mine to be just another static page with a few cards and links.
 
 I built this website to:
 - Have a central place for all my work  
 - Practice and improve my frontend skills  
+
+## Inspiration 
+
+I made this website to seen 3+ website form  [wallofportfolios](https://www.wallofportfolios.in/)
+and some dribble and my own mind
 
 ## Features
 
