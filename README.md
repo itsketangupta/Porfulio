@@ -1,18 +1,37 @@
-# itsketangupta
+# Ketan Gupta – Personal Portfolio
 
-this is my personal website made by me
+## What I Made
 
----
+This is my personal web portfolio where I bring together my projects, ideas, and experiments in one place. Instead of just listing work, I wanted to build something that actually reflects how I think and create as a developer.
 
-##  Features
+The goal of this site is not just to showcase projects, but to present my journey, creativity, and approach to web development in a simple and meaningful way.
 
-### In this website it has many hover effect like
+## Why I Made This
 
--  **You can see in this image the upper plant has hover effect you hover it the plant will be float**
--  **And the side Coffee cup has vibrate effect when you hover**
--  **The project section has drag function**
+Most portfolios feel very similar and predictable. I didn’t want mine to be just another static page with a few cards and links.,
 
----
+I built this website to:
+- Have a central place for all my work  
+- Practice and improve my frontend skills  
+
+## Features
+
+- Clean and modern UI  
+- Smooth and simple user experience  
+- Organized project showcase  
+- Fast loading with minimal setup
+- More hover effect
+- My song playlist lisien in Spotify
+
+## Tech Used
+
+- HTML  
+- CSS  
+- JavaScript
+
+## About Me
+. I am so lazy to writing
+
 ##  Getting Started
 
 ### 1. Clone the repository
@@ -43,14 +62,6 @@ If you’d like to improve My personal website:
 2. Create a new branch
 3. Make your changes
 4. Submit a pull request
-
----
-
-##  Tech Stack
-
-- HTML
-- CSS
-- JavaScript (Vanilla JS)
 
 ---
 
